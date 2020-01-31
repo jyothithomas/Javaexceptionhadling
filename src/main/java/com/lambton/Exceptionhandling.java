@@ -18,9 +18,9 @@ public class Exceptionhandling {
             int fraction =n/d;
             System.out.println("Fraction" + fraction);
             System.out.println("Array Value"+ a[3]);
-            p.setName("jyothi");
+            p.setName(null);
             p.setSalary(500);
-            se.getMessage();
+            //se.getMessage();
 
         }
         catch (ArithmeticException e)
@@ -32,9 +32,9 @@ public class Exceptionhandling {
             System.out.println("Array out of bound Occured"+e.getMessage());
         }
         catch(NullPointerException e){
-            System.out.println("Error"+e.toString());
+            System.out.println("Error"+e.getMessage());
         } catch (SalaryException e) {
-            e.printStackTrace();
+            System.out.println("error less salary"+e.getMessage());
         } finally {
             System.out.println("I am in finally");
         }
